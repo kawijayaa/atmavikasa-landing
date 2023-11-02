@@ -1,0 +1,23 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./**/*.{html,js}"],
+  theme: {
+    extend: {
+      animation: {
+          typing: 'typing 3s steps(31), blink .75s steps(2) infinite',
+      },
+      keyframes: {
+          typing: {
+              from: { width: '0' },
+              to: { width: '31ch' },
+          },
+          blink: {
+              from: { 'border-right-color': 'transparent' },
+              to: { 'border-right-color': 'white' },
+          },
+      },
+    },
+  },
+  plugins: [],
+}
+
