@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-          typing: 'typing 3s steps(31), blink .75s steps(2) infinite',
+          typing: 'typing 3s steps(37) 2s forwards, blink .75s steps(2) infinite',
       },
       keyframes: {
           typing: {
               from: { width: '0' },
-              to: { width: '31ch' },
+              to: { width: '37.2ch' },
           },
           blink: {
               from: { 'border-right-color': 'transparent' },

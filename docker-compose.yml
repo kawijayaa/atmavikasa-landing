@@ -5,7 +5,7 @@ services:
     image: jonasal/nginx-certbot:latest
     restart: unless-stopped
     environment:
-      - CERTBOT_EMAIL="oka@muhammadoka.dev"
+      - CERTBOT_EMAIL=oka@muhammadoka.dev
     ports:
       - 80:80
       - 443:443
